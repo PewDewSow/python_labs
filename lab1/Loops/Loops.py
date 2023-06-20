@@ -28,5 +28,15 @@ def second_task():
     else:
         print(text_final)
 
+# Пройдите по строке циклом и продублируйте каждый ее символ 3 раза. Выведите итоговую строку
+def third_task():
+    text = "stroka!"
+    text_final = ''
+    print(f"Исходная строка = {text}")
+    for i in text:
+        text_final += i * 3
+    else:
+        print(f"Финальная строка = {text_final}")
 
-second_task()
+
+third_task()
