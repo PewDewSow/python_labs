@@ -38,5 +38,13 @@ def third_task():
     else:
         print(f"Финальная строка = {text_final}")
 
+# Определите, не является ли введенная пользователем с клавиатуры строка пустой. Результат проверки в виде True или False
+# выведите на экран.
+def fourth_task():
+    text = str(input("Введите строку: "))
+    if text != '':
+        print("True")
+    else:
+        print("False")
 
-third_task()
+fourth_task()
