@@ -4,7 +4,7 @@
 first_value = float(input("Введите первое число: "))
 second_value = float(input("Введите второе число: "))
 
-if second_value == 0:
-    print("Делить на 0 нельзя")
-else:
-    print(f"Ответ = {first_value / second_value}")
+try:
+    print(f"{first_value} / {second_value} = {first_value / second_value}")
+except ZeroDivisionError:
+    print("Делить на 0 нельзя!")
