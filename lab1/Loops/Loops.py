@@ -127,5 +127,15 @@ def tenth_task():
         print(f"Всего кортежей {count_tuple}")
         print(f"Кортежи: {tuple_list}")
 
+# Сгенерируйте и выведите на экран мозаичное изображение гексагональной сетки,
+# напоминающее мелкоячеистую проволочную сетку
+def eleventh_task():
+    text_one = '/\\_'
+    text_two = '\\/ '
+    lines = 7
+    cell = 6
+    for _ in range(0, lines):
+        print(text_one * cell)
+        print(text_two * cell)
 
-tenth_task()
+eleventh_task()
