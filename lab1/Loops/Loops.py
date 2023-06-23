@@ -99,11 +99,16 @@ def eighth_task():
 
 # Посчитайте количество символов в строке 'Python — это Питон!', использовав счетчики на основе циклов for и while.
 def ninth_task():
-    count = 0
+    count_for = 0
+    count_while = 0
     text = "Python — это Питон!"
-    for i in text:
-        count += 1
+    for _ in text:
+        count_for += 1
     else:
-        print(f"В строке '{text}' насчитано {count} символов.")
+        print(f"В строке '{text}' насчитано {count_for} символов. (FOR)")
+    while count_while < len(text):
+        count_while += 1
+    else:
+        print(f"В строке '{text}' насчитано {count_while} символов. (WHILE)")
 
 ninth_task()
