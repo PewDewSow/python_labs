@@ -28,6 +28,7 @@ def second_task():
     else:
         print(text_final)
 
+
 # Пройдите по строке циклом и продублируйте каждый ее символ 3 раза. Выведите итоговую строку
 def third_task():
     text = "stroka!"
@@ -38,8 +39,9 @@ def third_task():
     else:
         print(f"Финальная строка = {text_final}")
 
-# Определите, не является ли введенная пользователем с клавиатуры строка пустой. Результат проверки в виде True или False
-# выведите на экран.
+
+# Определите, не является ли введенная пользователем с клавиатуры строка пустой. Результат проверки в
+# виде True или False выведите на экран.
 def fourth_task():
     text = str(input("Введите строку: "))
     if text != '':
@@ -47,4 +49,18 @@ def fourth_task():
     else:
         print("False")
 
-fourth_task()
+
+# Напишите программу, которая из предоставленного списка целых значений возвращает (печатает) только Чётные
+def fifth_task():
+    first_list = []
+    n = 10
+    for i in range(n):
+        first_list.append(random.randint(-100, 100))
+    else:
+        print(f"Первый список = {first_list}")
+    for i in first_list:
+        if i % 2 == 0:
+            print(i)
+
+
+fifth_task()
