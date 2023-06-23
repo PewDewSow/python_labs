@@ -75,4 +75,16 @@ def sixth_task():
     for i in first_list:
         print(i + 1 if i % 2 != 0 else i)
 
-sixth_task()
+# У вас есть список любых значений (целые числа) вывести только положительные
+def seventth_task():
+    first_list = []
+    n = 10
+    for i in range(n):
+        first_list.append(random.randint(-100, 100))
+    else:
+        print(f"Первый список = {first_list}")
+    for i in first_list:
+        if i > 0:
+            print(i)
+
+seventth_task()
