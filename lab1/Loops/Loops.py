@@ -97,6 +97,7 @@ def eighth_task():
         if i.isdigit():
             print(i)
 
+
 # Посчитайте количество символов в строке 'Python — это Питон!', использовав счетчики на основе циклов for и while.
 def ninth_task():
     count_for = 0
@@ -111,4 +112,20 @@ def ninth_task():
     else:
         print(f"В строке '{text}' насчитано {count_while} символов. (WHILE)")
 
-ninth_task()
+
+# Сколько кортежей содержится в списке [(1, 2), (3), (4,), (5+6), (7+8,)]? Проверьте свой ответ программно,
+# используя циклы. Выведите кортежи на экран в одну строку
+def tenth_task():
+    first_list = [(1, 2), (3), (4,), (5 + 6), (7 + 8,)]
+    tuple_list = []
+    count_tuple = 0
+    for i in first_list:
+        if type(i) == tuple:
+            tuple_list.append(i)
+            count_tuple += 1
+    else:
+        print(f"Всего кортежей {count_tuple}")
+        print(f"Кортежи: {tuple_list}")
+
+
+tenth_task()
