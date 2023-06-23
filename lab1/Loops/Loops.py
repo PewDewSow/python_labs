@@ -63,4 +63,16 @@ def fifth_task():
             print(i)
 
 
-fifth_task()
+# Напишите программу, которая из предоставленного списка целых значений возвращает (печатает) только Чётные.
+# НЕ четные увеличивает на 1 и выводит.
+def sixth_task():
+    first_list = []
+    n = 10
+    for i in range(n):
+        first_list.append(random.randint(-100, 100))
+    else:
+        print(f"Первый список = {first_list}")
+    for i in first_list:
+        print(i + 1 if i % 2 != 0 else i)
+
+sixth_task()
