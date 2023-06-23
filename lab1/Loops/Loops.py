@@ -75,6 +75,7 @@ def sixth_task():
     for i in first_list:
         print(i + 1 if i % 2 != 0 else i)
 
+
 # У вас есть список любых значений (целые числа) вывести только положительные
 def seventth_task():
     first_list = []
@@ -87,4 +88,14 @@ def seventth_task():
         if i > 0:
             print(i)
 
-seventth_task()
+
+# У вас список из различных типов данных. Выведите только целые числа (type () и isinstance () вам помогут)
+def eighth_task():
+    first_list = ["43", "faqwe", "!f", "#", "432", "-437", "d", "53"]
+    print(f"Первый список = {first_list}")
+    for i in first_list:
+        if i.isdigit():
+            print(i)
+
+
+eighth_task()
