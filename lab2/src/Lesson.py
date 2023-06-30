@@ -1,6 +1,3 @@
-from Teacher import Teacher
-
-
 class Lesson:
     all_lessons = []
 
@@ -10,12 +7,12 @@ class Lesson:
         self.teachers = teachers
         self.all_lessons.append(self)
 
-    def check_teacher_by_lesson(self, teacher: Teacher) -> bool:
-        if self in teacher:
+    def check_teacher_by_lesson(self, teacher) -> bool:
+        if teacher in self.teachers:
             return True
         else:
             print(f"Преподаватель {teacher.surname} {teacher.name} не "
-                  f"может преподать урок \"{self.name}\", так как не знает его")
+                  f"может преподать урок \"{self.lesson_name}\", так как не знает его")
             return False
 
     def get_teachers_by_lesson(self) -> list:
