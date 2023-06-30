@@ -8,13 +8,13 @@ class Teacher(Human):
         super().__init__(name, surname, email, age, tel)
         self.all_teachers.append(self)
 
-    @classmethod
-    def get_all_teachers(cls) -> list:
-        return cls.all_teachers
+    @staticmethod
+    def get_all_teachers() -> list:
+        return Teacher.all_teachers
 
-    @classmethod
-    def check_teacher(cls, teacher) -> bool:
-        return teacher in cls.all_teachers
+    @staticmethod
+    def check_teacher(teacher) -> bool:
+        return teacher in Teacher.all_teachers
 
     def hold_lesson(self, lesson, students: list) -> bool:
         if self.check_teacher(self):
