@@ -1,4 +1,4 @@
-from .Lesson import Lesson
+from Lesson import Lesson
 
 
 class Student:
@@ -14,7 +14,7 @@ class Student:
         return all_students
 
     @staticmethod
-    def check_student(student) -> bool:
+    def check_student(student: Student) -> bool:
         return True if student in all_students else False
 
     def get_knowledge(self, lesson: Lesson) -> bool:

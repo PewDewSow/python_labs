@@ -1,4 +1,4 @@
-from .Teacher import Teacher
+from Teacher import Teacher
 
 
 class Lesson:
@@ -18,5 +18,5 @@ class Lesson:
                   f"может преподать урок \"{self.name}\", так как не знает его")
             return False
 
-    def get_teachers_by_lesson(self):
+    def get_teachers_by_lesson(self) -> list:
         return self.teachers
