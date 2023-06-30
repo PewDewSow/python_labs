@@ -10,12 +10,16 @@ class Student:
         self.all_students.append(self)
 
     @staticmethod
-    def get_all_students():
+    def get_all_students() -> list:
         return all_students
 
     @staticmethod
-    def check_student(student):
+    def check_student(student) -> bool:
         return True if student in all_students else False
 
-    def get_knowledge(self, lesson: Lesson):
-        self.knowledge.append(lesson)
+    def get_knowledge(self, lesson: Lesson) -> bool:
+        try:
+            self.knowledge.append(lesson)
+            return True
+        except BaseException:
+            return False
