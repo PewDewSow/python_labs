@@ -5,12 +5,12 @@ class Teacher(Human):
     all_teachers = []
 
     def __init__(self, name: str, surname: str, email: str, age: int, tel: str):
-        super().__init__(name, surname, email, age, tel)
+        super().__init__(self, name, surname, email, age, tel)
         self.all_teachers.append(self)
 
-    @staticmethod
-    def get_all_teachers() -> list:
-        return Teacher.all_teachers
+    @classmethod
+    def get_all_teachers(cls) -> list:
+        return cls.all_teachers
 
     @staticmethod
     def check_teacher(teacher) -> bool:

@@ -6,12 +6,12 @@ class Student(Human):
 
     def __init__(self, name: str, surname: str, email: str, age: int, tel: str):
         self.knowledge = []
-        super().__init__(name, surname, email, age, tel)
+        super().__init__(self, name, surname, email, age, tel)
         self.all_students.append(self)
 
-    @staticmethod
-    def get_all_students() -> list:
-        return Student.all_students
+    @classmethod
+    def get_all_students(cls) -> list:
+        return cls.all_students
 
     @staticmethod
     def check_student(student) -> bool:
