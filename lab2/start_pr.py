@@ -1,6 +1,6 @@
-from src.Student import Student
-from src.Teacher import Teacher
-from src.Lesson import Lesson
+from src.lesson import Lesson
+from src.student import Student
+from src.teacher import Teacher
 
 Teacher_Vladislav = Teacher('Vladislav', 'Vlad_surname', 'vlad@gmail.com', 25, '1684')
 Teacher_Alexey = Teacher('Alexey', 'Alex_surname', 'alex@gmail.com', 30, '1314')

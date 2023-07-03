@@ -1,4 +1,4 @@
-from lab2.Practice.Worker import *
+from lab2.practice.worker import *
 
 
 class Helper(Worker):

@@ -1,4 +1,4 @@
-from lab2.src.Human import Human
+from lab2.src.human import Human
 
 
 class Student(Human):

@@ -1,4 +1,4 @@
-from lab2.Practice.Helper import *
+from lab2.practice.helper import *
 
 Vitya = Worker('Vitya Ivanov', '+1234-567-8989', 'Manager', 'Sales', 15000)
 Misha = Worker('Misha Ivanov', '+1234-567-1212', 'Admin', 'IT', 10000)
